@@ -1,0 +1,64 @@
+/* Fundo escurecido */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+  z-index: 90;
+}
+
+/* Container do modal */
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 500px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  animation: modalFadeIn 0.25s ease forwards;
+}
+
+.modal-close {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-info {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.modal-descricao {
+  color: #444;
+}
+
+/* Animação */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -55%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,20 @@
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Espaço para não ficar escondido atrás do header fixo */
+main {
+  padding: 20px;
+  margin-top: var(--header-height);
+}
+
+/* Reseta estilos dos links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}

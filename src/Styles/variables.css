@@ -1,0 +1,8 @@
+:root {
+  --primary: #2e7d32;    /* verde principal */
+  --primary-dark: #1b5e20;
+  --text: #222;
+  --bg: #f8f9fa;
+  --white: #fff;
+  --header-height: 70px;
+}
