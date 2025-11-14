@@ -16,3 +16,11 @@ footer {
 footer p {
   opacity: 0.9;
 }
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+  }
+}

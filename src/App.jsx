@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Header />
 
-      <main style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', flex: 1 }}>
+      <main>
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catalogo" element={<Catalogo />} />

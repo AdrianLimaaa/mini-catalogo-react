@@ -1,0 +1,68 @@
+.contato-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contato-container h1 {
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+
+.contato-container p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contato-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.contato-form input,
+.contato-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: .2s;
+}
+
+.contato-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.contato-form input.erro,
+.contato-form textarea.erro {
+  border-color: #e74c3c;
+  background: #fdecea;
+}
+
+.erro-msg {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+.contato-form button {
+  padding: 12px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.contato-form button:disabled {
+  background: #9ccc9c;
+  cursor: not-allowed;
+}

@@ -1,21 +1,28 @@
+import { useState } from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="header">
-      <h1>Mini Catálogo de Plantas 🌱</h1>
+      <h1 className="logo">Mini Catálogo de Plantas 🌱</h1>
 
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/catalogo">Catálogo</Link></li>
-          <li><Link to="/insumos">Insumos</Link></li>
-          <li><Link to="/sobre">Sobre Nós</Link></li>
-          <li><Link to="/contato">Contato</Link></li>
-        </ul>
+      <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+        <a href="/">Home</a>
+        <a href="/catalogo">Catálogo</a>
+        <a href="/insumos">Insumos</a>
+        <a href="/sobre">Sobre Nós</a>
+        <a href="/contato">Contato</a>
       </nav>
+
+      {/* Ícone Hambúrguer */}
+      <button
+        className="menu-btn"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        {menuOpen ? "✖" : "☰"}
+      </button>
     </header>
   );
 }
-

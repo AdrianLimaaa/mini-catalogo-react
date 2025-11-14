@@ -1,0 +1,67 @@
+.sobre-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* HERO (título principal) */
+.sobre-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sobre-hero h1 {
+  font-size: 32px;
+  color: var(--primary-dark);
+}
+
+.sobre-hero p {
+  color: #555;
+  margin-top: 8px;
+}
+
+/* BLOCOS PADRÃO */
+.sobre-bloco {
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+.sobre-bloco h2 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* LISTA DE OFERECIMENTO */
+.sobre-oferecemos {
+  margin-bottom: 40px;
+}
+
+.sobre-oferecemos h2 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.sobre-oferecemos ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sobre-oferecemos li {
+  margin: 8px 0;
+  font-size: 15.5px;
+  color: #444;
+}
+
+/* CHAMADA FINAL */
+.sobre-final {
+  text-align: center;
+  padding: 25px;
+  background: rgba(46, 125, 50, 0.08);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.sobre-final h2 {
+  color: var(--primary);
+  margin-bottom: 8px;
+}

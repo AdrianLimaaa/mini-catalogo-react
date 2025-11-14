@@ -1,85 +1,178 @@
-.catalogo-container {
-  padding: 20px;
-}
-
-.catalogo-container h1 {
-  font-size: 28px;
-  color: var(--primary-dark);
-  margin-bottom: 5px;
-}
-
-.catalogo-subtitle {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 25px;
-}
-
-/* GRID DE PLANTAS */
+/* GRID */
 .catalogo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 20px;
 }
 
-/* CARD DA PLANTA */
-.planta-card {
-  background: var(--white);
+/* CARD PREMIUM */
+.card-planta {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.08);
+  cursor: pointer;
+
+  /* ESTADO BASE (visível) */
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+/* estado oculto para animação */
+.card-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* quando entra na tela */
+.card-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* HOVER PREMIUM */
+.card-planta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.12);
+}
+
+/* IMAGEM */
+.card-imagem {
+  width: 100%;
+  height: 160px;
   border-radius: 10px;
-  padding: 18px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  object-fit: cover;
+  margin-bottom: 12px;
 }
 
-.planta-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.planta-header h2 {
+/* NOME */
+.card-nome {
   font-size: 18px;
   color: var(--primary-dark);
+  margin-bottom: 6px;
 }
 
-.planta-categoria {
-  font-size: 12px;
+/* TAG DE CATEGORIA */
+.card-categoria {
+  display: inline-block;
+  font-size: 13px;
   background: rgba(46, 125, 50, 0.1);
   color: var(--primary);
-  padding: 4px 8px;
+  padding: 4px 10px;
   border-radius: 50px;
-}
-
-/* INFORMACOES */
-.planta-info {
-  font-size: 14px;
-  color: #333;
-}
-
-.planta-info li + li {
-  margin-top: 4px;
-}
-
-.planta-descricao {
-  font-size: 14px;
-  color: #555;
+  margin-bottom: 12px;
 }
 
 /* BOTÃO */
-.btn-detalhes {
-  margin-top: 8px;
-  align-self: flex-start;
-  padding: 8px 14px;
-  border-radius: 6px;
+.card-btn {
+  margin-top: 10px;
+  padding: 10px 14px;
   border: none;
+  border-radius: 6px;
   background: var(--primary);
-  color: var(--white);
+  color: #fff;
   font-size: 14px;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: 0.2s;
 }
 
-.btn-detalhes:hover {
+.card-btn:hover {
   background: var(--primary-dark);
+}
+
+/* FILTROS */
+.catalogo-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-end;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  padding: 12px 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.filtro-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.filtro-grupo label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.filtro-grupo select {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 160px;
+}
+
+.filtro-reset {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  background: var(--primary-dark);
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.filtro-reset:hover {
+  background: #0f3a12;
+}
+
+/* ----- RESPONSIVIDADE GERAL ----- */
+@media (max-width: 768px) {
+
+  /* GRID vira 1 coluna */
+  .catalogo-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  /* CARD mais compacto */
+  .card-planta {
+    padding: 12px;
+  }
+
+  .card-imagem {
+    height: 180px;
+  }
+
+  .card-nome {
+    font-size: 17px;
+  }
+
+  .card-btn {
+    width: 100%;
+  }
+
+  /* FILTROS empilham */
+  .catalogo-filtros {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .filtro-grupo {
+    width: 100%;
+  }
+
+  .filtro-grupo select {
+    width: 100%;
+  }
+
+  .filtro-reset {
+    width: 100%;
+  }
 }
