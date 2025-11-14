@@ -1,16 +1,45 @@
-# React + Vite
+# 🌿 Mini Catálogo de Plantas — React SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação desenvolvida em **React + Vite**, usando o conceito de **SPA (Single Page Application)**, com navegação via **React Router**, componentes reutilizáveis, modal dinâmico, layout profissional e arquitetura organizada.
 
-Currently, two official plugins are available:
+Este projeto está em constante evolução e será futuramente integrado com um **back-end real** para torná-lo um sistema completo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🔥 Tecnologias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React**
+- **Vite**
+- **React Router DOM**
+- **CSS modular**
+- **JavaScript ES6+**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧩 Funcionalidades
+
+### ✔ Catálogo de plantas
+- Cards dinâmicos renderizados a partir de dados externos  
+- Layout responsivo em grid  
+- Exibição de informações essenciais (luz, rega, ambiente, fertilização)
+
+### ✔ Modal profissional
+- Aberto ao clicar em “Mais informações”  
+- Fundo escurecido (overlay)  
+- Animação de entrada (fade-in)  
+- Dados completos da planta  
+- Suporte a imagem individual  
+- Botão de fechar + clique no overlay
+
+### ✔ Navegação SPA
+- Home  
+- Catálogo  
+- Insumos (em desenvolvimento)  
+- Sobre Nós  
+- Contato  
+
+### ✔ Arquitetura bem definida
+- Componentes isolados  
+- Páginas independentes  
+- Arquivo `data/plantas.js` simulando um banco de dados  
+- Styles globais + CSS por componente  
