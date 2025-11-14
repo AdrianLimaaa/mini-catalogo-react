@@ -1,7 +1,3 @@
-<!-- BANNER DO PROJETO -->
-<p align="center">
-  <img src="./assets/banner.png" width="100%" alt="Banner do Projeto">
-</p>
 
 <h1 align="center">🌱 Mini Catálogo de Plantas</h1>
 
