@@ -1,5 +1,6 @@
 body {
-  background-color: var(--bg);
+  background: linear-gradient(140deg, #F1F8F3 0%, #E3F0E8 50%, #D8E7DF 100%);
+  background-attachment: fixed;
   color: var(--text);
 }
 

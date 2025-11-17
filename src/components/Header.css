@@ -1,21 +1,33 @@
 /* HEADER PADRÃO DESKTOP */
 .header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 15px 25px;
-  background: #2e7d32;
+  background: #032905;
   color: white;
 }
 
+.logoNome {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  font-size: 22px;
+  font-size: 20px;
+}
+
+.logoImg {
+  width: 80px;
+  height: auto;
+  margin-right: 1px;
 }
 
 /* Links normais no desktop */
 .nav-links {
   display: flex;
   gap: 25px;
+  margin: 0px auto;
 }
 
 .nav-links a {

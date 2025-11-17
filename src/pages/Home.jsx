@@ -1,12 +1,14 @@
 import "./Home.css";
 
+
 export default function Home() {
   return (
     <div className="home-container">
       <section className="home-hero">
-        <h1>Bem-vindo ao Mini Catálogo de Plantas 🌱</h1>
+        <h1>Bem-vindo ao <br /> Catálogo de Plantas do Oasis 🌱</h1>
         <p>Encontre informações sobre plantas, insumos e cuidados para seu jardim.</p>
       </section>
+      
 
       <section className="home-features">
         <div className="feature-card">

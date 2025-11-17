@@ -6,7 +6,12 @@ export default function Header() {
 
   return (
     <header className="header">
-      <h1 className="logo">Mini Catálogo de Plantas 🌱</h1>
+
+      <div className="logoNome">
+        <img src="./img/Logo/menor.png" alt="" className="logoImg"/>
+      <h1 className="logo">Oasis</h1>
+      </div>
+      
 
       <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
         <a href="/">Home</a>
